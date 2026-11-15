@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="A classic Snake Game built using HTML, CSS, and JavaScript with Vite. Control the snake, eat food, grow longer, and beat your high score! Features include smooth controls, increasing challenges, and persistent high-score saving using LocalStorage."/>
+  <meta name="author" content="Vishu Coder">
+  <meta name="keywords" content="Snake Game, JavaScript Game, HTML Game">
+  <title>Snake Game by Vishu</title>
+</head>
+<body>
+  <canvas id="canvas" width="200" height="200"></canvas>
+  <div class="controller">
+    <button class="btn up" data-action="up">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-action="up">
+        <path d="m18 15-6-6-6 6" data-action="up"/>
+      </svg>
+    </button>
+
+    <div class="left-right">
+      <button class="btn left" data-action="left">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-action="left">
+          <path d="m15 18-6-6 6-6" data-action="left"/>
+        </svg>
+      </button>
+      <button class="btn right" data-action="right">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-action="right">
+          <path d="m9 18 6-6-6-6" data-action="right"/>
+        </svg>
+      </button>
+    </div>
+
+    <button class="btn down" data-action="down">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-action="down">
+        <path d="m6 9 6 6 6-6" data-action="down"/>
+      </svg>
+    </button>
+  </div>
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
